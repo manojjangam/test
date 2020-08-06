@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> DuVista </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+
+<!----------------------------------------->
+
+
+<div id="header">
+	
+	<div id="logo">
+		<h1><a href="index.html">DuVista</a></h1>
+	</div>
+
+	<div id="nav">
+		<ul>
+			<li><a  href="index.html">HOME</a></li>
+			<li><a href="aboutus.html">ABOUT US</a></li>
+			<li><a href="services.html">SERVICES</a></li>
+			<li><a class="current" href="#">CONTACTS</a></li>
+		</ul>
+	</div>
+
+</div>
+
+<!----------------------------------------->
+
+<div id="content">
+
+<h2> CONTACT US </h2><hr><br><br>
+
+<p> Feel free to contact us or send us your enquiry here...</p><br>
+
+<form>
+	<label> Name </label>
+	<input type="text" placeholder=" Your Name " required="">
+	<label> Mobile Number </label>
+	<input type="phone" placeholder=" Your contact Number" required="">
+	<label> Email </label>
+	<input type="email" placeholder=" Your email">
+	<label> Write here </label>
+	<textarea required=""></textarea><br>
+	<button> Submit </button>
+</form>
+
+<div id="contact">
+	<ul>
+		<h1> <i class="fas fa-user-alt"></i> </h1>
+		<li> Contact Person</li>
+		<h1><i class="fas fa-phone-alt"></i></h1>
+		<li>+91 99 9999 9999</li>
+		<h1><i class="far fa-envelope"></i></h1>
+		<li>sales@example.com</li>
+	</ul>
+
+</div>
+		
+	<img class="logo" src="logo.png" title="DuVista" >	
+
+</div>
+
+<!----------------------------------------->
+
+<div id="footer">
+
+	<div id="social">
+		<a href="#"><i class="fab fa-facebook"></i></a>
+		<a href="#"><i class="fab fa-twitter"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+	</div>
+
+	<div id="copyrights">
+	 2020 copyrights@duvista 
+	</div>	
+
+</div>
+
+<div id="point"></div>
+
+<script src="jquery.js"></script>
+<script>
+	
+	$(function(){
+		$(document).mousemove(function(e){
+
+			var x= e.pageX;
+			var y= e.pageY;
+
+		$("#point").css({left:x, top:y});
+
+
+		});
+	});
+
+</script>
+
+</body>
+</html>

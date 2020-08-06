@@ -1,0 +1,288 @@
+
+*{
+	margin: 0;
+	cursor: none;
+	}
+
+body{
+	background-image: linear-gradient(#8A2387,#E94057,#3b8d99);
+	color: white;
+	overflow-x: hidden;
+	font-family: nexa;
+	}
+
+hr{border: 1px solid dodgerblue;}
+/* --------- HEADER -------------- */
+
+
+
+#bg img{
+	width: 110%;
+	filter: blur(1px);	
+}
+
+
+#nav .current{
+	color: deepskyblue;
+}
+
+#header{
+	background-color: rgba(0,0,0,0.5);
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+#logo{
+	position: relative;
+	margin: 20px 5px 20px 30px;
+	float: left;
+}
+
+#logo a{
+	text-decoration: none;
+	color: deepskyblue;
+}
+
+#nav{
+	float: right;
+	position: relative;
+	margin: 30px 30px 30px 5px;
+}
+
+#nav ul{
+	list-style: none;
+}
+
+#nav ul li{
+	display: inline;
+	text-align: center;
+}
+
+#nav ul li a{
+	text-decoration: none;
+	color: white;
+	margin: 0 20px;
+	font-size: 18px;
+}
+
+#nav ul li a:hover{
+	color: deepskyblue;
+}
+
+/* --------- CONETNT -------------- */
+
+#content{
+	background-color: rgba(0,0,0,0.5);
+	margin: 15% 5%;
+	padding: 5%;
+	text-align: center;
+}
+
+#content h1, h2{
+	font-family: timesnewroman;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#content h3 big{
+	font-size: 25px;
+}
+
+#content h3{
+	font-family: timesnewroman;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+#content ul{
+	margin-bottom: 20px;
+}
+
+#content ul li{
+	padding: 5px;
+	text-align: left;
+}
+
+#content img{
+	width: 72vw;
+	margin: 20px;
+}
+
+#content label{
+	display: block;
+	padding-bottom: 5px;
+}
+
+#content input, textarea{
+	margin-bottom: 20px;
+	width: 40%;
+	padding: 5px;
+	outline: none;
+	border: none;
+}
+
+#content input:focus, textarea:focus{
+	transform: scale(1.02);
+	transition: .6s;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+}
+
+#content button:hover{
+	border: none;outline: none;
+	background-color: dodgerblue;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+	padding: 3px 8px;
+}
+
+#content .logo{
+	width: 20%;
+	margin: 20px auto;
+}
+
+#contact ul{
+	margin-top: 100px;
+	transform: translateX(-20px);
+}
+
+#contact ul li{
+	list-style: none;
+	text-align: center;
+}
+
+#contact ul h1{
+	margin-top: 30px;
+}
+
+
+/* --------- FOOTER -------------- */
+
+#footer{
+	background-color: rgba(0,0,0,0.5);
+	height: 70px;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	z-index: 1;
+}
+
+#social{
+	float: left;
+	margin: 25px 30px;
+}
+
+#social a{
+	font-size: 20px;
+	color: white;
+	margin: 0 20px;
+}
+
+
+#social a:hover{
+	color: deepskyblue;
+}
+
+#copyrights{
+	float: right;
+	margin: 25px 25px 0 0;
+	color: deepskyblue;
+}
+
+
+#point{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px; height: 20px;
+	border-radius: 50%;
+	background-color: deepskyblue;
+	opacity: 0.7;
+	cursor: 1;
+}
+
+/* --------- MEDIA QUERY -------------- */
+
+@media (max-width: 650px){
+
+	/* --------- HEADER -------------- */
+
+#header{
+	height: 250px;
+	position: relative;
+	top: 0;
+}
+
+
+#logo{
+	position: relative;
+	top: 30px; left: 50%;
+	transform: translate(-60%,-50%);
+}
+
+#nav{
+	display: block;
+	position: absolute;
+	top: 130px; left: 50%;
+	transform: translate(-60%,-50%);
+}
+
+#nav li a{
+	display: block;
+	padding: 7px;
+}
+
+#nav ul li a:hover{
+	color: deepskyblue;
+}
+
+/* --------- CONETNT -------------- */
+
+
+#content{
+	font-size: 14px;
+	text-align: center;
+}
+
+#content img{
+	width: 75vw;
+	margin: 10px;
+}
+
+#content form{
+	text-align: center;
+}
+
+#content input, textarea{
+	width: 90%;
+}
+
+
+/* --------- FOOTER -------------- */
+
+#footer{
+	height: 100px;
+	position: sticky;
+	bottom: 0%;
+	transform: translateY(240%);
+}
+
+#social{
+	clear: both;
+	position: absolute;
+	top: 10%; left: 50%;
+	transform: translate(-65%,-50%);
+}
+
+#social a{
+	font-size: 16px;
+}
+
+
+#copyrights{
+	clear: both;
+	position: absolute;
+	bottom: 30%; right: 50%;
+	transform: translate(70%, 50%);
+}

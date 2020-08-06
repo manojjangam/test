@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> DuVista </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="all.css">
+	
+</head>
+<body>
+
+<!----------------------------------------->
+
+
+<div id="header">
+	
+	<div id="logo">
+		<h1><a href="index.html">DuVista</a></h1>
+	</div>
+
+	<div id="nav">
+		<ul>
+			<li><a  href="index.html">HOME</a></li>
+			<li><a  href="aboutus.html">ABOUT US</a></li>
+			<li><a class="current" href="#">SERVICES</a></li>
+			<li><a href="contact.html">CONTACTS</a></li>
+		</ul>
+	</div>
+
+</div>
+
+<!----------------------------------------->
+
+
+
+<div id="content">
+
+	<h2> SERVICES :</h2><hr><br>
+	<p>This page is under construction....</p> <br>
+	
+
+<img class="logo" src="logo.png" title="DuVista" >	
+
+
+</div>
+
+
+
+<!----------------------------------------->
+
+<div id="footer">
+
+	<div id="social">
+		<a href="#"><i class="fab fa-facebook"></i></a>
+		<a href="#"><i class="fab fa-twitter"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+	</div>
+
+	<div id="copyrights">
+		2020 copyrights@duvista
+	</div>	
+
+	
+
+</div>
+
+<div id="point"></div>
+
+<script src="jquery.js"></script>
+<script>
+	
+	$(function(){
+		$(window).mousemove(function(e){
+
+			var x= e.pageX;
+			var y= e.pageY;
+
+		$("#point").css({left:x, top:y});
+
+
+		});
+	});
+
+</script>
+
+
+</body>
+</html>
